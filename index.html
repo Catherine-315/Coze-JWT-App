@@ -4,19 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>「辦」識AI 系列 - 從零開始</title>
-    <!-- 引入 Google Fonts：Noto Serif TC (文青襯線體) + Noto Sans TC -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400&family=Noto+Serif+TC:wght@400;600&display=swap" rel="stylesheet">
-    <!-- 使用最新的 Coze Chat App SDK CDN -->
     <script src="https://sf-cdn.coze.com/obj/unpkg-va/flow-platform/chat-app-sdk/1.2.0-beta.6/libs/oversea/index.js"></script>
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
             font-family: 'Noto Sans TC', sans-serif;
-            background-color: #f7f5f0; /* 溫暖的米色/燕麥色文青風背景 */
+            background-color: #f7f5f0;
             color: #4a4543;
             min-height: 100vh;
             display: flex;
@@ -34,10 +28,9 @@
             text-align: center;
             border: 1px solid #eae5df;
         }
-        /* 相片擺放區 */
         .photo-frame {
             width: 100%;
-            height: 220px;
+            height: 240px;
             background-color: #f0ebe1;
             border-radius: 8px;
             margin-bottom: 24px;
@@ -45,23 +38,16 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 1px dashed #d6ccc2;
+            border: 1px solid #e2dad0;
         }
         .photo-frame img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
-        .photo-placeholder-text {
-            color: #8c827b;
-            font-size: 14px;
-            font-weight: 300;
-            letter-spacing: 1px;
-        }
-        /* 文青標題風格 */
         h1 {
             font-family: 'Noto Serif TC', serif;
-            font-size: 20px;
+            font-size: 19px;
             font-weight: 600;
             color: #2c2725;
             line-height: 1.6;
@@ -88,11 +74,9 @@
 <body>
 
     <div class="card">
-        <!-- 相片擺放位置：若要放相片，可將下方 <img> 的 src 換成你的圖片網址或檔名 -->
+        <!-- 已經對應你 GitHub 根目錄的 SDgroup.png -->
         <div class="photo-frame">
-            <!-- 示範：如要放相片，取消下面這行的註釋並填入圖片網址 -->
-            <!-- <img src="你的相片網址.jpg" alt="活動相片"> -->
-            <span class="photo-placeholder-text">🌿 這裡可以放你的活動相片</span>
+            <img src="SDgroup.png" alt="活動相片">
         </div>
 
         <h1>「辦」識AI 系列 - 從零開始：手把手帶你打造專屬 AI Chatbot</h1>
